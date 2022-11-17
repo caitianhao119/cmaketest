@@ -7,3 +7,11 @@ double sum_integers(const std::vector<double> integers) {
     }
     return sum;
 }
+
+int sum_integers(const std::vector<int> integers) {
+    int sum = 0;
+    for (auto i : integers) {
+        sum += i;
+    }
+    return sum;
+}
