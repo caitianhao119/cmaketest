@@ -1,0 +1,2 @@
+set(CMAKE_INCLUDE_CURRENT_DIR_IN_INTERFACE ON)
+add_library(sum sum_integers.cpp)
