@@ -14,4 +14,11 @@ double average_integers(const std::vector<int> integers) {
         sum += i;
     }
     return sum / static_cast<double>(integers.size());
+
+int sum_integers(const std::vector<int> integers) {
+    int sum = 0;
+    for (auto i : integers) {
+        sum += i;
+    }
+    return sum;
 }
