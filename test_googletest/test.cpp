@@ -7,13 +7,19 @@ int main(int argc, char **argv) {
 }
 
 TEST(example, sum_zero) {
-  auto integers = {1, -1, 2, -2, 3, -3};
+  std::vector<double> integers = {1, -1, 2, -2, 3, -3};
   auto result = sum_integers(integers);
   ASSERT_EQ(result, 0);
 }
 
 TEST(example, sum_five) {
-  auto integers = {1, 2, 3, 4, 5};
+  std::vector<double> integers = {1, 2, 3, 4, 5};
   auto result = sum_integers(integers);
   ASSERT_EQ(result, 15);
+}
+
+TEST(example, sum_double) {
+  std::vector<double> integers = {1.2, 2.4, 3.6, 4.8, 5.0};
+  auto result = sum_integers(integers);
+  ASSERT_EQ(result, 17.0);
 }
